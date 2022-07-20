@@ -8,7 +8,7 @@ a{
 img{
     width:500px;
     height:500px;
-   
+    margin-left: 25vw;
 }
 .box{
    
@@ -23,6 +23,9 @@ img{
     border-color: burlywood;
    
 
+}
+p{
+    margin-left: 15vw;margin-top: 0;
 }
 .box2{
    
