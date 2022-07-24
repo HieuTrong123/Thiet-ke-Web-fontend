@@ -1,0 +1,99 @@
+.header{
+    width: 100vw;
+    height: 40px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+}
+.nav-list{
+    margin: auto 16px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.nav-item{
+    color: white;
+    list-style: none;
+    margin: 0 8px;
+    /* display:inline-block; */
+    
+}
+.form-container{
+    max-width: 720px;
+    padding: 32px;
+    margin: 100px auto;
+    background-color: #fff;
+}
+.form-row{
+    padding: 8px 0;
+    display: flex;
+}
+.form-input{
+    flex: 1;
+}
+.form-label{
+    min-width: 90px;
+}
+button{
+    background-color: chocolate;
+    width: auto;
+    height: 35px;
+    font-size: medium;
+    margin: auto;
+    border: chocolate;
+}
+button:hover{
+    background-color: red;
+}
+.temp{
+    background-color: brown;
+    height: var(--tile);
+    width: 20px;
+    
+    animation: growth ease-in 5s;
+}
+.boad{
+    background-color: #fff;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;/*đảo chiều cross star */
+    flex-direction: row-reverse;/*đảo ngược main star*/
+    margin: 20px 10px;
+    padding: 20px;
+}
+@keyframes growth{
+    from{
+        opacity: 0;
+        height: calc(var(--tile)-50%);
+    }
+    to{
+        opacity: 1;
+        height: var(--tile);
+        
+    }
+}
+.box-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box-item{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    text-align: center;/*căn giữa chữ*/
+    line-height: 100px;/*tăng chiều cao dòng*/
+    font-weight: 700;/*độ đậm chữ*/
+}
+@media(min-width: 740px){
+    .box-container{
+        background-color: #fff;
+        display: flex;
+      flex-direction: row;
+        justify-content: space-around;
+    }
+}
