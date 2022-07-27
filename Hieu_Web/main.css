@@ -17,7 +17,7 @@
     list-style: none;
     margin: 0 8px;
     /* display:inline-block; */
-    
+
 }
 .form-container{
     max-width: 720px;
@@ -49,37 +49,50 @@ button:hover{
 .temp{
     background-color: brown;
     height: var(--tile);
+    /* height: 50px; */
     width: 20px;
-    
-    animation: growth ease-in 5s;
+    /* align-self: center; */
+  
+    /* animation: growth ease-in 5s; */
 }
 .boad{
     background-color: #fff;
     width: 700px;
-    height: 300px;
+    height: 600px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;/*đảo chiều cross star */
-    flex-direction: row-reverse;/*đảo ngược main star*/
-    margin: 20px 10px;
-    padding: 20px;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items:center; */
+    align-content:center;
+    /* flex-direction: row-reverse;đảo ngược main star */
+    margin: 20px 25vw;
+    /* padding: 20px; */
 }
 @keyframes growth{
     from{
         opacity: 0;
-        height: calc(var(--tile)-50%);
+        height: calc(var(--tile)-50px);
+  
     }
     to{
         opacity: 1;
         height: var(--tile);
-        
+
     }
 }
 .box-container{
+
     background-color: #fff;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-around;
+    /* align-items: flex-end; */
+    align-content: center;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 500px;
+
 }
 .box-item{
     width: 100px;
@@ -88,12 +101,14 @@ button:hover{
     text-align: center;/*căn giữa chữ*/
     line-height: 100px;/*tăng chiều cao dòng*/
     font-weight: 700;/*độ đậm chữ*/
+    /* margin: 20px; */
+
 }
-@media(min-width: 740px){
+/* @media(min-width: 740px){
     .box-container{
         background-color: #fff;
         display: flex;
-      flex-direction: row;
+        flex-direction: row;
         justify-content: space-around;
     }
-}
+} */
