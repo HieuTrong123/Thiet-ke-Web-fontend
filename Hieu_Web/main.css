@@ -52,8 +52,8 @@ button:hover{
     /* height: 50px; */
     width: 20px;
     /* align-self: center; */
-  
-    /* animation: growth ease-in 5s; */
+    
+    animation: growth ease-in 5s;
 }
 .boad{
     background-color: #fff;
@@ -63,8 +63,8 @@ button:hover{
     /* flex-direction: column; */
     justify-content: space-around;
     flex-wrap: wrap;
-    /* align-items:center; */
-    align-content:center;
+    align-items:flex-end;
+    /* align-content:flex-end; */
     /* flex-direction: row-reverse;đảo ngược main star */
     margin: 20px 25vw;
     /* padding: 20px; */
@@ -88,8 +88,8 @@ button:hover{
     /* flex-direction: column; */
     justify-content: space-around;
     /* align-items: flex-end; */
-    align-content: center;
-    flex-wrap: wrap;
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
     width: 700px;
     height: 500px;
 
