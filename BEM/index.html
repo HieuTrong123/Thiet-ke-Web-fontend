@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BEM</title>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div id="toast"></div>
+        <div style="margin:25% 25% 0 25%; Background-color:#fff;width: 600px;height: 300px;display: flex;align-items: flex-end;box-sizing: border-box;padding: 20px;justify-content: center;">
+            <button onclick="Function_Warn()" class="btn btn--warn">warn</button>
+            <button onclick="Function_Success()" class="btn btn--success">success</button>
+            <button onclick="Function_Erorr()" class="btn btn--Error">error</button>
+        </div>
+      
+        <script>
+            function toast({title,massage,type,duration}){
+                const main=document.getElementById('toast');
+                const icon={
+                        warn: 'fa-solid fa-triangle-exclamation',  
+                        success: 'fa-solid fa-circle-check',
+                        erorr: 'fa-solid fa-circle-exclamation',
+                       
+
+                    };
+                if(main){
+                    const toast=document.createElement('div');
+                   
+                    toast.classList.add('toast',`toast--${type}`);
+                    toast.style.animation=`SlideInLeft ease .3s,slideInRight linear 1s ${(duration/1000).toFixed(2)}s forwards`;
+                    toast.innerHTML=`
+                    <div class="toast__icon">
+                        <i class="${icon[type]}"></i>
+                     </div>
+                    <div class="toast__body">
+                        <h3 class="toast__title">${title}</h3>
+                        <p class="toast__msg">${massage}</p>
+                    </div>  
+                    <div class="toast__close">
+                        <i  class="fa-solid fa-xmark"></i>
+                    `;
+                    main.appendChild(toast);
+                    const AutoRemove=setTimeout(function(){
+                        main.removeChild(toast);
+                    },duration+1000);
+                    
+               
+               
+                    toast.onclick=function(e){
+                        if(e.target.closest('.toast__close')){
+                            main.removeChild(toast);
+                            clearTimeout(AutoRemove);
+                        }
+                    };
+                }
+            
+            }
+            function Function_Warn(){
+                toast({
+                title:'Warn',
+                massage:'máy vi tính kết nối internet không ổn định',
+                type:'warn',
+                duration:3000
+            });
+            }
+            function Function_Success(){         
+                toast({
+                title:'Success',
+                massage:'máy vi tính đã kết nối internet',
+                type:'success',
+                duration:3000
+            });
+            }
+            function Function_Erorr(){
+                toast({
+                title:'Erorr',
+                massage:'máy vi tính không thể kết nối internet',
+                type:'erorr',
+                duration:3000
+            });
+            
+            }
+          
+        </script>
+    </body>
+</html>
