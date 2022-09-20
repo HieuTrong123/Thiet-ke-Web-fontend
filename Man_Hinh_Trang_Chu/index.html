@@ -12,7 +12,7 @@
 <body>
    
     <div class="app">
-        <header class="header">
+        <div class="header">
            
             <nav class="header__navbar">
                 <ul class="header__navbar-list">
@@ -171,27 +171,703 @@
 
                 </div>
                 <div class="header__order">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <div class="cart-null__effect">
-                        <div class="header__cart-null">
-                           
-                            <i class="fa-solid fa-face-frown cart-null__icon"></i>
-                            <p>Chưa Có Sản Phẩm</p>
+                    <div class="order__icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="header__order-badge">+20</span>
+
+                        <div class="cart-null__effect">
+                            <div class="header__cart-null">
+                               
+                                <i class="fa-solid fa-face-frown cart-null__icon"></i>
+                                <p>Chưa Có Sản Phẩm</p>
+                            </div>
                         </div>
                     </div>
+                   
                 </div>
             </div>
-        </header>
+        </div>
         <div class="container">
+             <!--  Danh Mục  -->
+             <div class="grid__row">
+                <div class="grid__column-2">
+                    <div class="category">
+                       <div class="head">
+                            <div class="head__icon">
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                            <span class="head__content">
+                                Danh Mục
+                            </span>
+                       </div>
+                       <ul class="category__list">
+                        <li class="category__item"><div class="triangle"></div><a href="" class="category__link">SẢN PHẨM</a>
+                           </li>
+                        <li class="category__item"> <div class="triangle"></div> </li>
+                        <li class="category__item"> <div class="triangle"></div><a href="" class="category__link">TRANG ĐIỂM MẶT</a></li>
+                        <li class="category__item"> <div class="triangle"></div><a href="" class="category__link">TRANG ĐIỂM MÔI</a></li>
+                        <li class="category__item"> <div class="triangle"></div><a href="" class="category__link">TRANG ĐIỂM MẮT</a></li>
+                        <li class="category__item"> <div class="triangle"></div><a href="" class="category__link">MAKEUP COLLECTION</a></li>
+                       </ul>
+                    </div>
 
+                </div>
+                <div class="grid__column-8">
+                    <div class="header_category">
+                        <div class="header__category-filter">
+                            <span class="btn" style="background-color:transparent;">Sắp Xếp Theo</span>
+                        <div class="btn btn--main">Phổ Biến</div>
+                        <div class="btn">Mới Nhất</div>
+                        <div class="btn">Bán Chạy</div>
+                        <div class="btn selec__input">
+                            <div class="sort-price">
+                                <p class="price__content">Giá: Thấp đến cao</p>
+                                <p class="price__content">Giá Cao đến thấp</p>
+                            </div>
+                            <span class="selec__input-label">Giá</span><i class="fa-solid fa-caret-down selec__input-icon"></i></div>
+                        </div>
+                        <div class="page__numble">
+                            <div class=" header_category-page-num">
+                                <span class="header_category-page-current">1</span>
+                                /14
+                            </div>
+
+                            <div class="page__change-page">
+    
+                                <div class="btn-change-page btn-disable">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="btn-change-page btn-active"><i class="fa-solid fa-chevron-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__product">
+                        <div class="grid__row">
+                            <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a> <a class="grid__column-2-4  product" href="">
+                                
+                                <div class="home__product-image" style=" padding-bottom: 100%; background-size:contain;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image:url(	https://cf.shopee.vn/file/9a34f98ebcc17429b246173d3fa6c229_tn) "></div>
+                               <div class="product__content">
+                                <p class="home__product-content">
+                                    Gấu Bông Gối Ôm Heo Buồn Ngủ Heo Mắt Híp Béo Ú Đáng Yêu Ngộ Nghĩnh Co Dãn 4 Chiều Tina.vn
+                                </p>
+                                <div class="home__product-price">
+                                    <span class="home__product-price__old">12.000đ</span>
+                                    <span class="home__product-price-current">6.000đ</span>
+                                </div>
+                                <div class="home__product-active">
+                                    <div class="home__product-like">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <div class="home__product-rating">
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                        <i class="home__product-rating__star fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="home__product-origin">
+                                    <span class="home__product-brand">
+                                        Whoo
+                                    </span>
+                                    <span class="home__product-origin-name">
+                                        Hàn Quốc
+                                    </span>
+                                </div>
+                               </div>
+                                <div class="home__product-favourite">
+                                    <i class="favourite__icon fa-solid fa-check"></i>
+                                    <span class="favourite__content">
+                                        Yêu Thích
+                                    </span>
+                                </div>
+                                <div class="home__product-sale_off">
+                                    <span class="home__product-sale_off__percent">
+                                        50%
+                                    </span>
+                                    <span class="home__product-sale_off__label">
+                                        GIẢM
+                                    </span>
+                                </div>
+                            </a>
+                          
+                            
+                        </div>
+                    </div>
+                    <ul class="pagination home__product_pagination">
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">
+        
+                                <i class="pagination__icon fa-solid fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="pagination__item pagination__button-active">
+                            <a href="" class="pagination__link ">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">5</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">...</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">14</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">
+                                <i class="pagination__icon fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                     </ul>
+                </div>
+             </div>
+             
         </div>
         <footer class="footer">
-
+            <div class="grid">
+                <div class="grid__row footer__title">
+                    <div class="grid__column-2-4 ">
+                       <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hiếu Shop Mail</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Giới thiệu về Hiếu Shop</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Điều Khoản Hiếu Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Trang điểm mặt</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Trang điểm môi</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Trang điểm mắt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-icon fa-brands fa-facebook"></i>
+                                    facebook</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-icon fa-brands fa-instagram"></i>
+                                    instagram</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-icon fa-brands fa-linkedin"></i>
+                                    linkedin</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                       <div class="footer__download">
+                        <a href="" class="footer__qr-link"><img src="./asset/css/img/qr_code.png" alt="QR code" class="footer__download__qr-code"></a>
+                      
+                        <div class="footer__download-App">
+                            <a href="" class="footer__qr-link"> <img src="./asset/css/img/gg_play.png" alt="Google play" class="footer__QR-App"></a>
+                            <a href="" class="footer__qr-link"><img src="./asset/css/img/app_store.png" alt="App Store" class="footer__QR-App"></a>
+                            <!-- <a href="" class="footer__qr-link"><img src="./asset/css/img/qr__AppGalley.png" alt="AppGalley" class="footer__QR-App"></a> -->
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="grid__row footer__end">
+                    <p class="footer__text">
+                        2022 - Bản Quyền Công Ty Hiếu shop
+                    </p>
+                </div>
+            </div>
         </footer>
     </div>
    <!-- Modal layout-->
    <div id="modal__register"></div>
    <div id="modal__login"></div>
+   
     <script>
         function Modal__register(){
             const main=document.getElementById('modal__register');
@@ -308,5 +984,6 @@
             }
         }
     </script>
+    
 </body>
 </html>

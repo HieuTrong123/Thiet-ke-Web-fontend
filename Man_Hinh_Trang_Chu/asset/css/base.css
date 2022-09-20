@@ -8,12 +8,12 @@ html{
     font-size: 62.5%;
     line-height: 1.6rem;/*16px*/
     box-sizing: border-box;
-
+   
 }
 .grid{
-    width: 1200px;
+    width: 1840px;
     max-width: 100%;
-    margin: 0  auto;
+    margin: 0 ;
 }
 .grid__full-width{
     width: 100%;
@@ -21,6 +21,19 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+}
+.grid__column-2{
+    margin: 0 12px;
+    
+    width: 15.667%;
+}
+.grid__column-2-4{
+    margin: 10px 10px;
+    width: 18.6%;
+}
+.grid__column-8{
+    margin: 0 12px;
+    width: 81.333%;
 }
 /*modal*/
 .modal{
@@ -125,6 +138,8 @@ html{
     border-radius: 5px;
     cursor:pointer;
     background-color:#f0f0f0;
+    text-align: center;
+    line-height: 2;
 }
 .btn--normal:hover{
     background-color:  #999999;
