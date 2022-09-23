@@ -2,7 +2,6 @@
 .header{
     background: linear-gradient(-180deg,#af1807,#de491b);
     position: fixed;
-    /* position: relative; */
     top: 0;
     left: 0;
     right: 0;
@@ -433,6 +432,13 @@ body{
     transform-origin: 98% top;
     animation: GrowthCart_Null linear .2s;
     
+}
+.header__cart-null::before{
+    content: "";
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: -10%;
 }
 .cart-null__effect{
     display: none;
@@ -883,6 +889,7 @@ body{
     font-size: 20px;
    font-weight: 600;
    color: #757575;
+   cursor: default;
 }
 .footer__QR-App{
     width: 125px;
