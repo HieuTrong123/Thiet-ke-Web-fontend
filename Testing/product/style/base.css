@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #231f20;
+    font-weight: 600;
+    font-size: 15px;
+}
+body{
+    background-color: #fff;
+    padding: 30px 50px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: disc;
+}

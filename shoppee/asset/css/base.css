@@ -1,0 +1,343 @@
+:root{/* tạo nơi để đặt biến */
+    --white:#fff;
+}
+*{/* CSS lên tất cả các phần tử html được nhúng file base này */
+    box-sizing: inherit;/*kế thừa từ thẻ chứa nó*/
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;/*16px*/
+    box-sizing: border-box;
+   
+}
+.grid{
+    /* width: 1840px; */
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 ;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid__column-2{
+    margin: 0 12px;
+    
+    width: 15.667%;
+}
+.grid__column-2-4{
+    margin: 10px 10px;
+    width: 18.6%;
+}
+.grid__column-8{
+    margin: 0 12px;
+    width: 81.333%;
+}
+/*modal*/
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    z-index: 999;
+    
+}
+.modal__body{
+    margin: auto;
+    width: 520px;
+    height: 613px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    animation: GrowthModal ease-in .2s;
+}
+@keyframes GrowthModal{
+    from{
+        opacity: 0;
+        transform: scale(0);
+        
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+       
+    }
+}
+.modal__inner{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 436px;
+    flex: 5;
+}
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 20px;
+   
+}
+.modal__header__register{
+    font-size: 25px;
+    cursor: pointer;
+}
+.modal__header__login{
+    color:#ad2901;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal__content{
+    flex: 1;
+}
+.content__form{
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    height: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    
+}
+/* .form[type=text]{
+    border: 1px solid #ad2901;
+} */
+.form:hover{
+    border: #2c3032 solid;
+}
+.form+.form{
+    margin-top: 40px;
+}
+.form__note{
+    font-weight: 400;
+    font-size: 18px;
+    user-select: none;
+}
+.form__note-link{
+    text-decoration: none;
+    color: #ad2901;
+}
+.modal__button{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    background-color:#f0f0f0;
+    text-align: center;
+    line-height: 2;
+}
+.btn--normal:hover{
+    background-color:  #999999;
+}
+.btn+.btn{
+    margin-left: 10px;
+    
+}
+.btn--main{
+    background-color: #ad2901;
+    color: #fff;
+}
+.btn--main:hover{
+    background-color: #de491b;
+}
+.modal__footer{
+    background-color: #e5e5e5;
+    display: flex;
+    /* height: 57px; */
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border-radius: 0 0 5px 5px;
+}
+.auth-form__socials{
+    font-size: 18px;
+    cursor: pointer;
+    width: 227px;
+    height: 34px;
+    /* text-align: center; */
+    display: flex;
+   
+    justify-content: space-between;
+}
+.auth-form__socials+.auth-form__socials{
+    margin-left: 10px;
+}
+.socials--facebook{
+    background-color:darkblue;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+.socials--Google{
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+.socials__note{
+    /* flex: 2; */
+    margin: auto;
+}
+.socials__icon{
+    /* flex: 1; */
+}
+.login{
+    padding: 10px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login__title{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 50px 0;
+    font-weight: 600;
+
+}
+.login__title-header{
+    font-size: 25px;
+    cursor: pointer;
+   
+
+}
+.login__title-register{
+    font-size: 20px;
+    color: #de491b;
+    cursor: pointer;
+}
+.login__form{
+
+}
+.login__button{
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    line-height: 2;
+    /* margin: 40px 0 10px 0; */
+}   
+.login__button:hover{
+    cursor: pointer;
+}
+.login__selective{
+    display: flex;
+    justify-content: space-between;
+}
+.login__connec-link{
+    text-decoration: none;
+    font-size: 18px;
+}
+.login__seperate{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    opacity: 0.8;
+}
+.login__seperate::after{
+    content: "";
+    position: absolute;
+    width: 135px;
+    border-bottom: solid #2c3032;
+    top: 5px;
+    right: 10px;
+}
+.login__seperate::before{
+    content: "";
+    position: absolute;
+    width: 135px;
+    border-bottom: solid #2c3032;
+    top: 5px;
+    left: 10px;
+}
+.login__extend{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+}
+.login__footer{
+    
+}
+.language{
+    position: absolute;
+    width: 216px;
+    height: 107px;
+    background-color: #fff;
+    top: 33px;
+    left: -36px;
+    box-shadow: 0 0 2px #2c3032;
+    padding: 0 10px;
+    display: none;
+    animation: GrowthChangeLanguage ease-in .3s;
+    transform-origin: 90% top;
+    z-index: 9999;
+}
+@keyframes GrowthChangeLanguage {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.language::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: -26px;
+    left: 1px;
+}
+.item__language:hover .language{
+    display: block;
+}
+.language::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width:10px 20px;
+    border-color: transparent transparent #f0f0f0 transparent;
+    top: -20px;
+    right: 12px;
+}
+.language__VN{
+    font-size: 25px;
+    width: 100%;
+   height: 50%;
+   /* text-align: center; */
+   line-height: 2;
+   cursor: pointer;
+
+}
+.language__Eng{
+    font-size: 25px;
+   width: 100%;
+   height: 50%;
+   /* text-align: center; */
+   line-height: 2;
+   cursor: pointer;
+}
+.language__Eng:hover,.language__VN:hover{
+    color:darkgoldenrod ;
+}

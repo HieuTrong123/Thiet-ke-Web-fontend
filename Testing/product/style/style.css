@@ -1,0 +1,385 @@
+.logo{
+    height: 84px;
+    width: 182px;
+}
+
+.nav{
+    z-index: 1000;
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    display: inline-block;
+    height: 0;
+    width: 0;
+}
+.top__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 92vw;
+   
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+.nav__list a:hover{
+    text-decoration: underline;
+}
+.nav__item{
+
+}
+.nav__icon{
+    margin: 0 10px;
+}
+.nav__item+.nav__item{
+    margin-left: 40px;
+}
+.nav__link{
+    text-decoration: none;
+}
+.slide__list{
+    margin-top: 20px;
+}
+.slide__menu{
+    display: inline-block;
+    
+}
+.slide__menu ul{
+    
+    width: 20vw;
+    max-height: 70vh;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+.slide__menu ul::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+}
+.sub__menu{
+    opacity: 0.6;
+}
+.slide__menu li{
+    margin: 5px 0;
+}
+.slide__menu ul+li{
+    margin-top: 25px;
+   
+}
+.slide__menu a:hover{
+    cursor:pointer;
+    color: #23527c;
+    text-decoration: underline;
+}
+#container{
+    width: 65vw;
+    margin: 15.5vh 10vw 20px 25vw;
+}
+/* product */
+.container__product{
+    display: flex;
+}
+.product__link{
+    width: 50%;
+}
+.product__img{
+    width: 100%;
+    
+}
+.product__content{
+    margin-left: 40px;
+    width: 50%;
+}
+.product__content h3+h3{
+    margin-top: 20px;
+}
+.product__content h3+ul{
+ margin-top: 5px;
+}
+.product__list ul+h3{
+   margin-top: 20px;
+}
+.product__list h3+ul{
+    margin-left: 30px;
+}
+.product__content h3{
+    opacity: 0.6;
+}
+.product__content li{
+    opacity: 0.6;
+}
+.product__content a:hover{
+    text-decoration: underline;
+}
+.product__name{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.product__money{
+    font-size: 18px;
+    
+}
+.product__intro{
+
+}
+.product__options{
+    width: 80%;
+}
+.product__limit{
+    margin-top: 20px;
+}
+.options__title{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.options__size{
+    text-decoration: underline;
+}
+.options__size:hover{
+    cursor: pointer;
+}
+select[name="option"]{
+    font-size: 16px;
+    border: 2px solid #565354;
+    padding: 5px 25px 5px 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    
+}
+.options__form{
+    display: flex;
+    flex-direction: column;
+   
+}
+.options__button{
+   height: 35px;
+   text-align: start;
+   padding: 0 8px;
+   font-size: 14px;
+   color: #fff;
+   background-color: #231f20;
+   margin-bottom: 10px;
+}
+.options__button:hover{
+    opacity: 0.85;
+    cursor: pointer;
+}
+.suggest__title{
+    margin: 100px 0;
+    font-size: 18px;
+}
+.product__box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.container__img{
+    width: 100%;
+}
+.container__link:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #000;
+}
+.container__link{
+    margin-bottom: 100px;
+    width: 30%;
+}
+.container__text{
+    text-align: center;
+    font-weight: 900;
+   margin: 20px 0;
+}
+.text__name{
+    font-size: 15px;
+    word-wrap: break-word;
+
+}
+.text__name:hover{
+    cursor:pointer;
+    color: #23527c;
+}
+.model{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: hsla(0,0%,100%,.75);
+    overflow-y: scroll;
+    z-index: 9999; 
+    
+}
+.model__on{
+    display: block;
+}
+.model__container{
+  display: inline-block;
+   margin: 5% 25%;
+   border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+    padding: 10px;
+    background-color: #fff;
+}
+.model__title{
+    
+   padding: 40px 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+   border-bottom: 2px solid #d5d2d2;
+}
+.model__title i,h3{
+    font-size: 25px;
+}
+.model__title i:hover{
+    cursor: pointer;
+}
+.model__img{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: inline-block;
+}
+/* product */
+
+/* store */
+/* .container__box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container__img{
+    width: 100%;
+}
+.container__link:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #000;
+}
+.container__link{
+    margin-bottom: 100px;
+    width: 30%;
+}
+.container__text{
+    text-align: center;
+    font-weight: 900;
+   
+   margin: 20px 0;
+}
+.text__name{
+    font-size: 15px;
+    word-wrap: break-word;
+
+}
+.text__name:hover{
+    cursor:pointer;
+    color: #23527c;
+}
+.text__money{
+   
+}
+.text__sale{
+  
+}
+.sale__money{
+    text-decoration: line-through;
+}
+.numble{
+    border: 1px solid #000;
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+.numble:hover{
+   cursor: pointer;
+}
+.numble+.numble{
+    margin-left: 15px;
+}
+.page__numble{
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+   margin-bottom: 100px;
+}
+.page__1{
+ 
+}
+.page__2{
+
+}
+.page__next{
+    border: 1px solid #000;
+    padding: 5px 8px;
+    margin-left: 15px;
+}
+.page__next:hover{
+    cursor: pointer;
+ } */
+ /* store */
+#footer{
+    position: relative;
+    z-index: 2000;
+    left: 0;
+    right: 0;
+    /* width: 94.5%; */
+    background-color: #fff;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.footer__list{
+    width: 30%;
+    list-style: none;
+}
+.footer__item+.footer__item{
+    margin-top: 10px;
+}
+.footer__logo{
+    text-align: center;
+}
+.footer__logo_text{
+    margin-bottom: 15px;
+}
+.footer__contact{
+
+}
+.contact__list{
+    list-style: none;
+    display: flex;
+}
+.contact__item+.contact__item{
+    margin-left: 40px;
+}
+.contact__link{
+    text-decoration: none;
+}
+.contact__link:hover{
+    color: #23527c;
+}
+.footer__phone:hover{
+    cursor:pointer;
+    color: #23527c;
+}
+.shortcuts{
+    position: fixed;
+    bottom: 27vh;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.shortcuts__homepage{
+    font-size: 30px;
+    color: aliceblue;
+    margin: 10px 15px;
+}
+.shortcuts__box{
+   width: 50px;
+   height: 50px;
+    background-color: black;
+    /* padding:15px; */
+}

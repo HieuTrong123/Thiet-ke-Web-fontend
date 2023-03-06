@@ -1,0 +1,141 @@
+.logo{
+    height: 84px;
+    width: 182px;
+}
+
+.nav{
+    z-index: 1000;
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    display: inline-block;
+    height: 0;
+    width: 0;
+}
+.top__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 92vw;
+   
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+}
+.nav__list a:hover{
+    text-decoration: underline;
+}
+.nav__item{
+
+}
+.nav__icon{
+    margin: 0 10px;
+}
+.nav__item+.nav__item{
+    margin-left: 40px;
+}
+.nav__link{
+    text-decoration: none;
+}
+
+#container{
+    padding: 12vh 0;
+    width: 100%;
+}
+.container__news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.news__item{
+    width: 45%;
+    cursor: pointer;
+}
+.news__item:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #000;
+}
+.news__item h3{
+ font-size: 20px;
+ font-weight: 400;
+
+}
+.news__img{
+    width: 100%;
+}
+.news__content{
+    padding-bottom: 30px;
+    padding-left: 10px;
+    background-color: #fff;
+    
+}
+.news__item h3[class="news__name"]{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+#footer{
+    position: relative;
+    z-index: 2000;
+    left: 0;
+    right: 0;
+    /* width: 94.5%; */
+    background-color: #fff;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.footer__list{
+    width: 30%;
+    list-style: none;
+}
+.footer__item+.footer__item{
+    margin-top: 10px;
+}
+.footer__logo{
+    text-align: center;
+}
+.footer__logo_text{
+    margin-bottom: 15px;
+}
+.footer__contact{
+
+}
+.contact__list{
+    list-style: none;
+    display: flex;
+}
+.contact__item+.contact__item{
+    margin-left: 40px;
+}
+.contact__link{
+    text-decoration: none;
+}
+.contact__link:hover{
+    color: #23527c;
+}
+.footer__phone:hover{
+    cursor:pointer;
+    color: #23527c;
+}
+.shortcuts{
+    position: fixed;
+    bottom: 27vh;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.shortcuts__homepage{
+    font-size: 30px;
+    color: aliceblue;
+    margin: 10px 15px;
+}
+.shortcuts__box{
+   width: 50px;
+   height: 50px;
+    background-color: black;
+    /* padding:15px; */
+}

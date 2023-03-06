@@ -1,0 +1,80 @@
+.form_1{
+    border: #000 solid;
+    display: inline-block;
+    padding: 80px 40px;
+    /* position: fixed;
+    top: 15%;
+    left: 30%; */
+}
+.email{
+
+}
+.form__input{
+    width: 800px;
+    height: 50px;
+    font-size: 25px;
+}
+.form__note{
+
+}
+.password{
+
+}
+.password__repeat{
+
+}
+form > div{
+    margin: 30px 0;
+}
+.form--eror{
+   color: red;
+}
+.form--eror .form__input{
+    border: 2px solid red;
+}
+.form--eror .form__input:focus-visible{
+    border: 2px solid red;
+    outline: none;
+}
+.form--success{
+    color: green;
+}
+.form--success .form__input{
+    border: 2px solid green;
+}
+.form--success .form__input:focus-visible{
+    border: 2px solid green;
+    outline: none;
+}
+.form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #1ac7b6;
+  }
+.gender__name{
+    font-size: 25px;
+    margin: 40px 0;
+    color: #000;
+}
+.gender__form{
+    width: 30px;
+    height: 30px;
+}
+.gender__note{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
