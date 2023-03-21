@@ -1,0 +1,36 @@
+
+ul{
+    padding: 0;
+}
+#head{
+   background-color: transparent;
+}
+.head__nav{
+    display: flex;
+    padding:20px 100px;
+    justify-content: space-between;
+}
+.head__list{
+    display: flex;
+    /* align-items: baseline; */
+}
+.head__item{
+
+}
+.head__item+.head__item{
+    margin-left: 70px;
+}
+.item__link{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+img+span{
+    margin-left: 20px;
+}
+input[id="btnOpenMenu"]{
+    background-color: transparent;
+    display: none;
+
+}
