@@ -1,14 +1,22 @@
+var scroll=0;
 function Jump__navigation(){
     document.onwheel=function(e) {
         const head =document.querySelector('.head');
         const container = document.querySelector('#container');
         if(e.deltaY>0){
-            head.style.position="";
-            container.classList.remove('container__marginTop');
+            ++scroll;
+            if(scroll>2){
+                
+                head.classList.add('temp','head__height');
+            }
         } 
         else{
-            head.style.position="fixed";
-            container.classList.add('container__marginTop');
+          if(scroll>0)
+                --scroll;
+                head.classList.remove('head__height');
+            if(scroll<1){
+                head.classList.remove('temp');
+            }
         }
     }
 }

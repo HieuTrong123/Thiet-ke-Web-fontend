@@ -8,12 +8,17 @@
     display: flex;
     align-items: center;
     height: 150px;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     background-color:black;
     box-shadow: 10px 0 50px #000000cc;
+    overflow-y: hidden;
+}
+.head__height{
+    height: 0;
 }
 .head__logo{
     /* padding: 10px 20px; */
@@ -246,4 +251,8 @@
     color: #fff;
     text-align: baseline;
     transform: translateY(12%);
+}
+.temp{
+    background-color: #f0f0f0;
+    color: #333333;
 }
